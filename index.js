@@ -7,6 +7,8 @@ function combineUsers(...args) {
     combinedObjects.users = [...combinedObjects.users, ...arg];
   }
 
+  combinedObjects.merge_date = new Date().toISOString();
+
   return combinedObjects;
 }
 
